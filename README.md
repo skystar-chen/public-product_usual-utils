@@ -127,6 +127,13 @@ type LazyLoadingListFnType = ( // 懒加载添加数据
 ) => any[];                    // 整理后的数组
 默认值: 无
 
+方法名: isObjNoData
+用途及参数注解:
+type IsObjNoDataFnType = (  // 判断一个对象是否无数据及所有字段无数据
+  obj: object | (any & {}), // 要判断的对象
+) => boolean;               // 判断结果
+默认值: 无
+
 方法名: reverseObj
 用途及参数注解:
 type ReverseObjFnType = (        // 将对象的键与值互换
